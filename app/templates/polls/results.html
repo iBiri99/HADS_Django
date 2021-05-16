@@ -19,11 +19,11 @@
 
 {% else %}
 
-    <label>Tu respuesta ha sido: {{ choice.choice_text }}</label> <br/>
+    <label>Has contestado {{ choice.choice_text }}</label> <br/>
 
 
-    {% if  choice.isCorrect %}
-      <label style="color:darkgreen;">Correcto</label><br />
+    {% if  choice.correct %}
+      <label style="color:green;">Correcto</label><br />
     {% else %}
       <label style="color:red;">Incorrecto</label><br />
     {% endif %}
